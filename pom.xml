@@ -60,4 +60,8 @@
 			<version>1.2</version>
 		</dependency>
 	</dependencies>
+	<modules>
+		<module>devops.petstore</module>
+		<module>maven-download</module>
+	</modules>
 </project>
