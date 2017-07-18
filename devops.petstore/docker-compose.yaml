@@ -1,0 +1,16 @@
+#启动时从maven.ygsoft.com下载spring-boot应用
+dynamic-petstore:
+  image: docker.ygsoft.com/ygsoft/spring-boot-run:1.0
+  ports:
+  - 9080:9080
+  environment:
+  - GROUP_ID=xwh
+  - ARTIFACT_ID=devops.petstore
+  - VERSION=1.0
+  - JAVA_OPTS=-Xms128m -Xmx512m
+  
+static-petstore:
+  image: docker.ygsoft.com/xwh/devops.petstore:1.0
+  ports:
+  - 9081:9080
+  
