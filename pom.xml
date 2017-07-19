@@ -18,7 +18,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<docker.registry.name>xwh</docker.registry.name>
-		<docker.repostory>docker.ygsoft.com</docker.repostory>
+		<docker.repostory>dockerhub.ygsoft.com:5000</docker.repostory>
 	</properties>
 	<version>1.0-SNAPSHOT</version>
 	<distributionManagement>
@@ -53,7 +53,7 @@
 					</artifactItems>
 				</configuration>
 			</plugin>
-			
+
 			<!-- 把依赖jar和当前jar打包成可独立执行jar -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -66,7 +66,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
